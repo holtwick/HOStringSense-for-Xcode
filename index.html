@@ -1,71 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hostringsense-for-xcode by holtwick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>String Plugin for Xcode by holtwick</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Hostringsense-for-xcode</h1>
-        <p>Plugin for Xcode to make working with strings less &quot;escaped&quot;</p>
+    <header>
+      <div class="inner">
+        <h1>String Plugin for Xcode</h1>
+        <h2>Improved string editing, especially for escapes</h2>
+        <a href="https://github.com/holtwick/HOStringSense-for-Xcode" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-        <p class="view"><a href="https://github.com/holtwick/HOStringSense-for-Xcode">View the Project on GitHub <small>holtwick/HOStringSense-for-Xcode</small></a></p>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="hostringsense-for-xcode-" class="anchor" href="#hostringsense-for-xcode-"><span class="octicon octicon-link"></span></a>HOStringSense for Xcode <a href="https://flattr.com/submit/auto?user_id=holtwick&amp;url=https://github.com/holtwick/HOStringSense-for-Xcode&amp;title=HOStringSense-for-Xcode&amp;language=&amp;tags=github&amp;category=software"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this git repo"></a>
+</h1>
 
+<p>Perfect for editing regular expressions, multi line texts, inline HTML and many more use cases.</p>
 
-        <ul>
-          <li><a href="https://github.com/holtwick/HOStringSense-for-Xcode/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/holtwick/HOStringSense-for-Xcode/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/holtwick/HOStringSense-for-Xcode">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Edit strings like <code>@"Hello\nWorld!"</code> unescaped!</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p><img src="https://github.com/holtwick/HOStringSense-for-Xcode/raw/master/Xcode.png" alt="Screenshot" title="Example"></p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Simply build the Xcode project and restart Xcode. The plugin will automatically be installed in <code>~/Library/Application Support/Developer/Shared/Xcode/Plug-ins</code>. First remove the plugin from there (and restart Xcode).</p>
+
+<p>If you get a "Permission Denied" error while building, please see <a href="https://github.com/omz/ColorSense-for-Xcode/issues/1">this issue</a>.</p>
+
+<h2>
+<a name="keyboard-shortcut" class="anchor" href="#keyboard-shortcut"><span class="octicon octicon-link"></span></a>Keyboard Shortcut</h2>
+
+<p>With a little trick you can enable keyboard shortcut for showing the popover. Open <code>System Preferences</code> app, then section <code>Keyboard</code> and add a custom application shortcut for Xcode as in the following image:</p>
+
+<p><img src="https://github.com/holtwick/HOStringSense-for-Xcode/raw/master/Shortcut.png" alt="Screenshot" title="Keyboard Shortcur"></p>
+
+<h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>I'm a Mac and iOS developer, follow me on Twitter <a href="https://twitter.com/holtwick">@holtwick</a> or ADN <a href="https://alpha.app.net/ho">@ho</a>.</p>
+
+<h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>This work is derived from the awesome <a href="https://github.com/omz/ColorSense-for-Xcode">Color Sense</a> plugin of Ole Zorn. Thanks Ole!</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code>Copyright (c) 2012, Dirk Holtwick
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </code></pre>
+        </section>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <aside id="sidebar">
+          <a href="https://github.com/holtwick/HOStringSense-for-Xcode/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/holtwick/HOStringSense-for-Xcode/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+          <p class="repo-owner"><a href="https://github.com/holtwick/HOStringSense-for-Xcode"></a> is maintained by <a href="https://github.com/holtwick">holtwick</a>.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/holtwick">holtwick</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+  
   </body>
 </html>
